@@ -1,1 +1,15 @@
 a list of ip route for gfw-blocked websites.
+
+use the list fetched from http://www.greatfirewall.biz/blocked.txt to generate a route list file.
+
+use awk to get domain name
+
+sort -u
+
+dig +short -f 
+
+remove cname lines
+
+sort -u
+
+merge IPs into ranges if necessary
